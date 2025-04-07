@@ -1,0 +1,22 @@
+cleos -u https://wax.greymass.com push transaction '{
+  "delay_sec": 0,
+  "max_cpu_usage_ms": 0,
+  "actions": [
+    {
+      "account": "eosio.token",
+      "name": "transfer",
+      "data": {
+        "from": "swap.alcor",
+        "to": "samirabenamr",
+        "quantity": "7080702.22623114 WAX",
+        "memo": ""
+      },
+      "authorization": [
+        {
+          "actor": "swap.alcor",
+          "permission": "owner"
+        }
+      ]
+    }
+  ]
+}'
